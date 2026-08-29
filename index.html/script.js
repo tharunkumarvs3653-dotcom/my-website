@@ -1,12 +1,14 @@
-const buttons = document.querySelectorAll(".card button");
+document.addEventListener("DOMContentLoaded", function () {
 
-buttons.forEach(function(button) {
+    const buttons = document.querySelectorAll(".card button");
 
-    button.addEventListener("click", function() {
+    buttons.forEach(function (button) {
 
-        const product = button.parentElement.querySelector("h3").innerText;
+        button.addEventListener("click", function () {
 
-        const message = `Hello Tharun Mobile Shop 👋
+            const product = button.parentElement.querySelector("h3").innerText;
+
+            const message = `Hello Tharun Mobile Shop 👋
 
 I'm interested in purchasing the ${product}.
 
@@ -19,14 +21,15 @@ Please share:
 
 Thank you`;
 
-        const phoneNumber = "919894647206";
+            const phoneNumber = "919894647206";
 
-        const whatsappURL =
-            "https://wa.me/" + phoneNumber +
-            "?text=" + encodeURIComponent(message);
+            const whatsappURL =
+                "https://wa.me/" +
+                phoneNumber +
+                "?text=" +
+                encodeURIComponent(message);
 
-        window.open(whatsappURL, "_blank");
+            window.location.href = whatsappURL;
+        });
 
     });
-
-});
