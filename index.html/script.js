@@ -6,7 +6,18 @@ buttons.forEach(function(button) {
 
         const product = button.parentElement.querySelector("h3").innerText;
 
-        const message = "Hi, I am interested in buying " + product;
+       const message = `Hello Tharun Mobile Shop 👋
+
+I’m interested in purchasing the ${product}.
+
+Please share:
+* Available colors
+* Storage/RAM options
+* Final price
+* Warranty details
+* Delivery availability
+
+Thank yo
 
         const phoneNumber = "9894647206";
 
