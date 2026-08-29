@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   buttons.forEach(function (button) {
 
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
 
-      const product = button.parentElement.querySelector("h3").innerText;
+      event.preventDefault();
+
+      const card = button.closest(".card");
+      const product = card.querySelector("h3").textContent.trim();
 
       const message =
         "Hello Tharun Mobile Shop 👋\n\n" +
@@ -19,15 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "• Delivery availability\n\n" +
         "Thank you!";
 
-      const phoneNumber = "919894647706";
-
       const whatsappURL =
-        "https://wa.me/" +
-        phoneNumber +
-        "?text=" +
+        "https://wa.me/919894647206?text=" +
         encodeURIComponent(message);
 
-      window.open(whatsappURL, "_blank");
+      window.location.href = whatsappURL;
 
     });
 
