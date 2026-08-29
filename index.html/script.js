@@ -31,14 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   });
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-        const splash = document.getElementById("splash-screen");
+ setTimeout(function () {
+    const splash = document.getElementById("splash-screen");
 
-        if (splash) {
-            splash.style.display = "none";
-        }
-    }, 2000);
-});
-
-});
+    if (splash) {
+        splash.style.display = "none";
+    }
+}, 2000);
