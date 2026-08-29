@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const product = button.parentElement.querySelector("h3").innerText;
 
-            const message = `Hello Tharun Mobile Shop 👋
+          const message = `Hello Tharun Mobile Shop 👋
 
 I'm interested in purchasing the ${product}.
 
 Please share:
-* Available colors
-* Storage/RAM options
-* Final price
-* Warranty details
-* Delivery availability
+• Available colors
+• Storage/RAM options
+• Final price
+• Warranty details
+• Delivery availability
 
 Thank you`;
 
