@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const buttons = document.querySelectorAll(".card button");
+  const buttons = document.querySelectorAll(".card button");
 
-    buttons.forEach(function (button) {
+  buttons.forEach(function (button) {
 
-        button.addEventListener("click", function () {
+    button.addEventListener("click", function () {
 
-            const product = button.parentElement.querySelector("h3").innerText;
+      const product = button.parentElement.querySelector("h3").innerText;
 
-          const message = `Hello Tharun Mobile Shop 👋
+      const message = `Hello Tharun Mobile Shop 👋
 
 I'm interested in purchasing the ${product}.
 
@@ -19,17 +19,20 @@ Please share:
 • Warranty details
 • Delivery availability
 
-Thank you`;
+Thank you!`;
 
-            const phoneNumber = "919894647206";
+      const phoneNumber = "919894647706";
 
-            const whatsappURL =
-                "https://wa.me/" +
-                phoneNumber +
-                "?text=" +
-                encodeURIComponent(message);
+      const whatsappURL =
+        "https://wa.me/" +
+        phoneNumber +
+        "?text=" +
+        encodeURIComponent(message);
 
-            window.location.href = whatsappURL;
-        });
+      window.location.href = whatsappURL;
 
     });
+
+  });
+
+});
