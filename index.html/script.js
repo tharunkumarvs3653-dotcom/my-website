@@ -6,9 +6,9 @@ buttons.forEach(function(button) {
 
         const product = button.parentElement.querySelector("h3").innerText;
 
-       const message = `Hello Tharun Mobile Shop 👋
+        const message = `Hello Tharun Mobile Shop 👋
 
-I’m interested in purchasing the ${product}.
+I'm interested in purchasing the ${product}.
 
 Please share:
 * Available colors
@@ -17,9 +17,9 @@ Please share:
 * Warranty details
 * Delivery availability
 
-Thank yo
+Thank you`;
 
-        const phoneNumber = "9894647206";
+        const phoneNumber = "919894647206";
 
         const whatsappURL =
             "https://wa.me/" + phoneNumber +
@@ -29,4 +29,4 @@ Thank yo
 
     });
 
-});s
+});
